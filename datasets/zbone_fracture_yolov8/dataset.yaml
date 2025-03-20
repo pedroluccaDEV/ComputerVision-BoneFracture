@@ -1,0 +1,21 @@
+# dataset.yaml
+train: datasets\bone fracture detection.v4-v4.yolov8\train\images    # Caminho para as imagens de treinamento
+val: datasets\bone fracture detection.v4-v4.yolov8\valid\images      # Caminho para as imagens de validação
+test: datasets\bone fracture detection.v4-v4.yolov8\test\images      # Caminho para as imagens de teste
+
+nc: 7                     # Número de classes (7 tipos de fraturas)
+names: 
+  - 'elbow positive'
+  - 'fingers positive'
+  - 'forearm fracture'
+  - 'humerus fracture'
+  - 'humerus'
+  - 'shoulder fracture'
+  - 'wrist positive'
+
+roboflow:
+  workspace: veda
+  project: bone-fracture-detection-daoon
+  version: 4
+  license: CC BY 4.0
+  url: https://universe.roboflow.com/veda/bone-fracture-detection-daoon/dataset/4
